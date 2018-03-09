@@ -1,0 +1,37 @@
+
+.scroll {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+}
+
+
+.scroll:before {
+    content: "↓";
+    position: absolute;
+    top: calc(100% - -30px);
+    left: calc(50% - 6px);
+    transform: rotate(0deg); /*flech dirction*/
+	animation:
+	    jump
+	    1.5s
+	    ease-out
+	    0s
+	    alternate
+	    infinite
+	    running;
+}
+
+
+@keyframes jump {
+	  0% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	  }
+
+	  100% {
+		-webkit-transform: translateY(-25px);
+		-ms-transform: translateY(-25px);
+		transform: translateY(-25px);
+}

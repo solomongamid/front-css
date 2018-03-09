@@ -1,0 +1,208 @@
+/*header {
+    height: 120px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+
+}
+
+main {
+    margin-top: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline;
+    position: relative;
+}
+
+nav ul ul {
+    display: block;
+    left: 0;
+    width: 400px;
+}
+
+
+nav a {
+    /*padding: 10px;*/
+    /*
+}
+
+nav ul ul li {
+    display: block;
+    left: 0;
+    width: 400px;
+
+}
+
+nav ul ul a {
+    background-color: #FFF;
+    display: inline-block;
+}
+nav li:hover ul {
+    display: block;
+}*/
+
+/*  layout */
+        .header{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            height: 100px;
+            display: flex;
+            align-items: stretch;
+        }
+        .logo{
+            width: 200px;
+            padding: 2% 2% 2% 0%;
+            display: flex;
+        }
+
+        .menu{
+            flex-grow: 1;
+            display: flex;
+            list-style-type: none;
+            padding: 4%;
+        }
+        .menu li{            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+        .menu li:before{
+            content: "|";
+            padding-right: 20%; 
+        }
+        .menu li:first-child:before{
+            content: "";
+        }
+        .row {
+            display: flex;
+            align-items: stretch;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+        .sidebar {
+            background-color: #f1f1f1;
+            margin-left:  45px;
+            width: 210px;
+            height: 700px;
+        }
+        .section{
+            background-color: #f1f1f1;
+            height: 700px;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 10px;
+            height: 100px;
+        }
+        .li-dropdown{
+            position: relative;
+        }
+        .dropdown{
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px ;
+            z-index: 1;
+        }
+        .dropdown li:before{
+            content: "";
+        }
+        .li-dropdown:hover .dropdown{
+            display: block;
+
+        }                            regular, regular italic, semi-bold (qui fera office de bold), semi-bold italic, et light
+        
+        /* Font Montserrat */
+        @font-face {
+            font-family: "Montserrat";
+            src: local("Montserrat"), /* version locale */ 
+                 url("font/montserrat/montserrat-regular-webfont.woff2") format("woff2"), /* Navigateur très récents */
+                 url("font/montserrat/montserrat-regular-webfont.woff") format("woff"), /* Navigateur moderne */
+                 url("fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype"), /* Safari, Android, iOS */
+                 
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Montserrat";
+            src: local("Montserrat"), /* version locale */ 
+                 url("font/montserrat/montserrat-light-webfont.woff2") format("woff2"), /* Navigateur très récents */
+                 url("font/montserrat/montserrat-light-webfont.woff") format("woff"), /* Navigateur moderne */
+                 url("fonts/montserrat/montserrat-light-webfont.ttf") format("truetype"), /* Safari, Android, iOS */
+                 
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Montserrat";
+            src: local("Montserrat"), /* version locale */ 
+                 url("font/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), /* Navigateur très récents */
+                 url("font/montserrat/montserrat-semibold-webfont.woff") format("woff"), /* Navigateur moderne */
+                 url("fonts/montserrat/montserrat-semibold-webfont.ttf") format("truetype"), /* Safari, Android, iOS */
+                 
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Montserrat";
+            src: local("Montserrat"), /* version locale */ 
+                 url("font/montserrat/montserrat-semibolditalic-webfont.woff2") format("woff2"), /* Navigateur très récents */
+                 url("font/montserrat/montserrat-semibolditalic-webfont.woff") format("woff"), /* Navigateur moderne */
+                 url("fonts/montserrat/montserrat-semibolditalic-webfont.ttf") format("truetype"), /* Safari, Android, iOS */
+                 
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        body {
+        font-family: "Montserrat", arial, sans-serif;
+        }
+        p{
+        font-family: "Montserrat", italic;
+        }
+
+        /*        .ul-child{
+            position: relative;
+            display: inline-block;
+            background-color: red;
+            padding: 10px;
+        }
+        .ul-child li{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }*/
+
+/*        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+        }*/
